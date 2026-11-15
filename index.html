@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff4f1">
+  <title>27 Bacini 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#512e3a;--rose:#e68ca1;--berry:#9c4c68;--cream:#fffaf6;--peach:#ffe6dc}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;color:var(--ink);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 18% 18%,#fff 0,transparent 35%),radial-gradient(ellipse at 85% 85%,#f8d7dc 0,transparent 34%),linear-gradient(145deg,#fff6ef,#fce9ed 55%,#f9e3d5);overflow:hidden}
+    body:before,body:after{position:fixed;content:'✿';font-size:clamp(130px,25vw,300px);color:#fff8;pointer-events:none;z-index:-1}
+    body:before{left:-.07em;top:-.18em;transform:rotate(-20deg)}body:after{right:-.08em;bottom:-.25em;transform:rotate(18deg)}
+    .sparkle{position:fixed;color:#d98a9c;opacity:.5;animation:float 5s ease-in-out infinite;pointer-events:none}.s1{top:15%;left:13%;font-size:24px}.s2{top:23%;right:15%;font-size:18px;animation-delay:1s}.s3{bottom:16%;left:20%;font-size:18px;animation-delay:2s}.s4{bottom:25%;right:12%;font-size:25px;animation-delay:.7s}
+    @keyframes float{50%{transform:translateY(-13px) rotate(12deg)}}
+    main{width:min(100%,480px);position:relative;text-align:center;padding:clamp(34px,8vw,60px) clamp(25px,7vw,52px) 42px;border:1px solid #fff9;border-radius:34px;background:linear-gradient(155deg,#fffdf9ed,#fff8f5e8);box-shadow:0 28px 80px #8f4a5b24, inset 0 1px 0 #fff;backdrop-filter:blur(14px);animation:arrive .85s cubic-bezier(.2,.8,.2,1) both}
+    @keyframes arrive{from{opacity:0;transform:translateY(22px) scale(.98)}to{opacity:1;transform:none}}
+    .paw{font-size:30px;line-height:1;margin-bottom:18px;filter:drop-shadow(0 5px 5px #be71832c)}
+    h1{margin:0;line-height:1.04;font-family:'Playfair Display',serif;font-size:clamp(48px,12vw,76px);letter-spacing:-.055em;color:#a95170;background:repeating-linear-gradient(115deg,#98445f 0 2px,#bd6681 2px 4px,#df96a4 4px 5px,#a94f6b 5px 7px);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 3px 0 #f4c5c6) drop-shadow(0 8px 8px #9d52602b)}
+    .subtitle{margin:16px 0 30px;color:#8e6872;font-size:15px;letter-spacing:.015em}
+    label{display:block;text-align:left;margin:0 0 9px 4px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#986a78}
+    .input-wrap{position:relative}.input-wrap span{position:absolute;left:17px;top:50%;transform:translateY(-50%);font-size:17px;opacity:.65}
+    input{width:100%;height:56px;padding:0 16px 0 47px;border:1.5px solid #f0ccd1;border-radius:16px;background:#fffdfb;color:var(--ink);font:500 16px 'DM Sans',sans-serif;outline:none;box-shadow:0 4px 14px #9b57600d;transition:.2s}
+    input:focus{border-color:#d9879b;box-shadow:0 0 0 4px #f4dce2}
+    button{width:100%;height:56px;margin-top:14px;border:0;border-radius:16px;background:linear-gradient(110deg,#c36580,#a64f70);color:white;font:700 15px 'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer;box-shadow:0 9px 20px #a84c6c35;transition:transform .18s,box-shadow .18s}
+    button:hover{transform:translateY(-2px);box-shadow:0 13px 24px #a84c6c42}button:active{transform:translateY(0)}
+    .message{min-height:22px;margin:12px 0 0;color:#a34c67;font-size:13px;font-weight:600}
+    .footer{margin:22px 0 0;color:#b38a91;font-size:12px}.heart{display:inline-block;color:#d57891;animation:beat 1.4s ease-in-out infinite}@keyframes beat{50%{transform:scale(1.25)}}
+    @media(max-height:650px){body{overflow:auto}main{padding-top:30px;padding-bottom:28px}.subtitle{margin-bottom:20px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <span class="sparkle s1" aria-hidden="true">✧</span><span class="sparkle s2" aria-hidden="true">♡</span><span class="sparkle s3" aria-hidden="true">✦</span><span class="sparkle s4" aria-hidden="true">✧</span>
+  <main>
+    <div class="paw" aria-hidden="true">🐾</div>
+    <h1>27 Bacini</h1>
+    <p class="subtitle">A tiny secret, wrapped up just for you.</p>
+    <form id="gate-form">
+      <label for="password">Your little secret word</label>
+      <div class="input-wrap"><span aria-hidden="true">🗝️</span><input id="password" name="password" type="password" placeholder="Type the password…" autocomplete="off" required aria-describedby="message"></div>
+      <button type="submit">Open your surprise <span aria-hidden="true">♡</span></button>
+      <p class="message" id="message" role="status" aria-live="polite"></p>
+    </form>
+    <p class="footer">Made with a whole lot of <span class="heart">♥</span></p>
+  </main>
+  <script>
+    // Demo passphrase for this static gift site. Change it here to your own secret.
+    const PASS_PHRASE = '27bacini';
+    document.querySelector('#gate-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const entered = document.querySelector('#password').value.trim().toLocaleLowerCase();
+      if (entered === PASS_PHRASE) {
+        sessionStorage.setItem('27bacini-unlocked', 'yes');
+        window.location.href = 'surprise.html';
+      } else {
+        const message = document.querySelector('#message');
+        message.textContent = 'Not quite, bacino… try one more time 💌';
+        document.querySelector('#password').setAttribute('aria-invalid', 'true');
+      }
+    });
+    document.querySelector('#password').addEventListener('input', (event) => {
+      event.currentTarget.removeAttribute('aria-invalid');
+      document.querySelector('#message').textContent = '';
+    });
+  </script>
+</body>
+</html>
